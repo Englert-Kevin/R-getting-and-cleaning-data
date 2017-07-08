@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 
 #Summary of Human Activity Recognition Using Smartphones Dataset
 

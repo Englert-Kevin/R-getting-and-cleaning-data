@@ -1,24 +1,24 @@
 # Summary of Human Activity Recognition Using Smartphones Dataset
 
 ### Subject and Activity Means Analysis
-#### by Coursera Student - KPE
+### by Coursera Student - KPE
 
 
-#### Data Collection: 
+### Data Collection: 
 Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
 
 1. Smartlab - Non-Linear Complex Systems Laboratory DITEN - Università degli Studi di Genova, Genoa (I-16145), Italy. 
 2. CETpD - Technical Research Centre for Dependency Care and Autonomous Living Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain  activityrecognition '@' smartlab.ws
 
-#### Overview Summary:
+### Overview Summary:
 The goal of this exercise was the summarize over 10,000 observations on acceleration and angular velocity by two variables: subject and activity, resulting in a data set of 180 observations across 79 variables in addition to the subject and activity variables.
 
 The raw data collection was carried out by the above authers on a group of 30 volunteers within an age bracket of 19-48 years. Each subject performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity measures were captured at a constant rate of 50Hz. The experiments were video-recorded to label the data manually. The obtained dataset was randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. This analysis was executed on the above raw data. It was combined, reformated, an summarized to examine individual subjects performance by activity.
 
-#### Raw Data Measurement Detail
+### Raw Data Measurement Detail
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
-#### Files
+### Files
 Analysis: located on GitHub
 
 - 'run_analysis.R': R script executing the below steps on the associated raw data to clean, unite, and analyse the data. The script stores a tidy data set called, 'GettingAndCleaningData_TidyData.txt' in the working directory.
@@ -44,14 +44,14 @@ Raw Data: downloaded from the web here: https://d396qusza40orc.cloudfront.net/ge
 
 - 'test/y_test.txt': Test labels.
 
-#### Getting Started
+### Getting Started
 The run_analysis.R script includes code to download, unzip, and load the raw data. 
 
 If you do not wish to have this run automatically. To recreate the process manually, please download the zip file at the above URL and unzip locally.
 
 Be sure to place the unzipped raw data in the working directory or else the script will not work properly.
 
-#### Prerequisites
+### Prerequisites
 
 Software
 
@@ -67,7 +67,7 @@ R Packages
 
 - library(data.table)
 
-#### Summary Metrics
+### Summary Metrics
 This analysis focused on the mean and standard deviation units of the raw data set. This was done to isolate measures of central tendency when summarizing by subject and activity. I do not understand this subject domain deeply, so I have added comments in the run_analysis.R script, where my interpretation may differ from expected norms. 
 
 Measurement breakdowns
@@ -86,7 +86,7 @@ Measurement breakdowns
 
 - Fast Fourrier Transformation versus standard
 
-#### Guide To Conducting the Analysis
+### Guide To Conducting the Analysis
 
 1. Load libraries for packages used in the run_analysis script
 
@@ -106,14 +106,14 @@ Measurement breakdowns
 
 9. Creates a tidy data set with the average of each variable for each activity and each subject, by create a tabl_df to house the clean data, using dplyr functions to group and sumarize the table data frame by subject and activity by mean, and writing the resulting table data frame to a new txt file in the working directory.
 
-#### System Details
+### System Details
 This analysis was conduct using the below system:
 
 Device: MacOS Sierra v10.12.4
 
 R Version: 3.3.3 (2017-03-06)
 
-#### Acknowledgments
+### Acknowledgments
 
 In completing the assignment, I referenced:
 

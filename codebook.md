@@ -1,4 +1,4 @@
-####Codebook for Summary of Human Activity Recognition Using Smartphones Dataset
+#### Codebook for Summary of Human Activity Recognition Using Smartphones Dataset
 
 - "subject": The group of 30 volunteers within an age bracket of 19-48 years who participated in the experiment.
 - "activity": The behaviors that were measured in this analysis: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
